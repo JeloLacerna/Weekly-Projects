@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="splash-screen">
+        <div id="splash-bg">
+        </div>
+        
+        <div id="splash-sign">
+            <h1 id="snakes">Snakes</h1>
+            <h3 id="and">and</h3>
+            <h1 id="ladders">Ladders</h1>
+        </div>
+        <button id="start-btn" role="button">Start Game</button>
+    </div>
+    
+    <div id="play-area">
+        <div class="sidebar" id="blue-side">
+            <h1>BLUE</h1>
+            <div class="stats-card">
+                <div class="label-container">
+                    <p>Current Roll</p>
+                    <p>Previous Roll</p>
+                    <p>Current Position</p>
+                    <p>Previous Position</p>
+                </div>
+                <div>
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                </div>
+                <div>
+                    <p id="blue-cur-roll">0</p>
+                    <p id="blue-prev-roll">0</p>
+                    <p id="blue-cur-pos">1</p>
+                    <p id="blue-prev-pos">1</p>
+                </div>
+            </div>
+            <div class="dice-container">
+                <div id="blue-turn">
+                    <h1>Your Turn</h1>
+                </div>
+                <div class="result-container" id="blue-res">
+                   <img src="./content/dice/Alea_1.png" alt=""> 
+                </div>
+                <button class="roll-btn" id="blue-roll">Roll</button>
+            </div>
+        </div>
+        <div id="container">
+            <h1 id="banner">Snakes and Ladders</h1>
+            <div id="board-container">
+                <div id="board"></div>
+                <div id="arrow-container">
+                    <div class="arrow" id="arrow1"></div>
+                    <div class="arrow" id="arrow2"></div>
+                    <div class="arrow" id="arrow3"></div>
+                    <div class="arrow" id="arrow4"></div>
+                    <div class="arrow" id="arrow5"></div>
+                    <div class="arrow" id="arrow6"></div>
+                    <div class="arrow" id="arrow7"></div>
+                    <div class="arrow" id="arrow8"></div>
+                    <div class="arrow" id="arrow9"></div>
+                    <div class="arrow" id="arrow10"></div>
+                    <div class="arrow" id="arrow11"></div>
+                    <div class="arrow" id="arrow12"></div>
+                    <div class="arrow" id="arrow13"></div>
+                </div>
+                <div id="piece-container"></div>
+            </div>
+        </div>
+        <div class="sidebar" id="red-side">
+            <h1>RED</h1>
+            <div class="stats-card">
+                <div class="label-container">
+                    <p>Current Roll</p>
+                    <p>Previous Roll</p>
+                    <p>Current Position</p>
+                    <p>Previous Position</p>
+                </div>
+                <div>
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                </div>
+                <div>
+                    <p id="red-cur-roll">0</p>
+                    <p id="red-prev-roll">0</p>
+                    <p id="red-cur-pos">1</p>
+                    <p id="red-prev-pos">1</p>
+                </div>
+            </div>
+            <div class="dice-container">
+                <div id="red-turn"></div>
+                <div class="result-container" id="red-res">
+                   <img src="./content/dice/Alea_1.png" alt=""> 
+                </div>
+                <button class="roll-btn" id="red-roll">Roll</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="alert-container">
+        <div id="alert">
+        </div>
+    </div>
+
+</body>
+</html>
